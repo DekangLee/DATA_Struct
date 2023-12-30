@@ -1,0 +1,59 @@
+Date : 2023-12-07 18:19:35
+Directory : c:\Users\Administrator\Desktop\project-C++\DATA_Struct
+Total : 29 files,  3726 codes, 1703 comments, 78 blanks, all 5507 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         25 |      3,679 |      1,703 |         73 |      5,455 |
+| TXT      |          3 |         27 |          0 |          4 |         31 |
+| CSV      |          1 |         20 |          0 |          1 |         21 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                          | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                             |         29 |      3,726 |      1,703 |         78 |      5,507 |
+| . (Files)                                                                                     |          5 |        150 |         10 |         15 |        175 |
+| 0_intruduce                                                                                   |          7 |        176 |        711 |         21 |        908 |
+| LinearDataStructure                                                                           |         15 |      3,186 |        923 |         35 |      4,144 |
+| SortAlgrithm                                                                                  |          2 |        214 |         59 |          7 |        280 |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                      | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\0_intruduce\Example.h                  | C++      |        133 |         12 |          2 |        147 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\0_intruduce\GCD.cpp                    | C++      |          0 |         49 |          1 |         50 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\0_intruduce\MaxSubsum.cpp              | C++      |          0 |        289 |          7 |        296 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\0_intruduce\test0.cpp                  | C++      |         43 |         41 |          5 |         89 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\0_intruduce\test02.cpp                 | C++      |          0 |         75 |          4 |         79 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\0_intruduce\test1.cpp                  | C++      |          0 |         58 |          2 |         60 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\0_intruduce\undo.cpp                   | C++      |          0 |        187 |          0 |        187 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\MatrixTestMain.cpp | C++      |          0 |        127 |          0 |        127 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\applycation.cpp    | C++      |          0 |        160 |          2 |        162 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\arrayList.hpp      | C++      |        360 |          6 |          2 |        368 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\arrayStack.hpp     | C++      |        131 |          2 |          1 |        134 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\chainList.hpp      | C++      |        709 |         38 |          3 |        750 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\circularList.hpp   | C++      |        263 |          8 |          2 |        273 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\doubleLinkList.hpp | C++      |        507 |         25 |          2 |        534 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\linearList.hpp     | C++      |         50 |          0 |          0 |         50 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\linearListMain.cpp | C++      |          0 |        410 |          0 |        410 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\linkedStack.hpp    | C++      |        143 |          0 |          1 |        144 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\listLearning.cpp   | C++      |          0 |        126 |          3 |        129 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\matrix.hpp         | C++      |        341 |          6 |          4 |        351 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\myExpectation.h    | C++      |        103 |         10 |         10 |        123 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\polynomial.hpp     | C++      |        520 |          3 |          4 |        527 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\LinearDataStructure\stackTestMain.cpp  | C++      |         59 |          2 |          1 |         62 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\MaxSub.csv                             | CSV      |         20 |          0 |          1 |         21 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\SortAlgrithm\MySort.h                  | C++      |        178 |         50 |          6 |        234 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\SortAlgrithm\test1.cpp                 | C++      |         36 |          9 |          1 |         46 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\myExpectation.h                        | C++      |        103 |         10 |         10 |        123 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\undo.txt                               | TXT      |          9 |          0 |          1 |         10 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\undo1.txt                              | TXT      |          9 |          0 |          1 |         10 |
+| c:\Users\Administrator\Desktop\project-C++\DATA_Struct\undo2.txt                              | TXT      |          9 |          0 |          2 |         11 |
+| Total                                                                                         |          |      3,726 |      1,703 |         78 |      5,507 |
++-----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

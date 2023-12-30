@@ -1,0 +1,71 @@
+Date : 2023-12-21 14:35:39
+Directory : e:\project-C++\DATA_Struct
+Total : 41 files,  4866 codes, 2273 comments, 99 blanks, all 7238 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         34 |      4,796 |      2,273 |         94 |      7,163 |
+| TXT      |          6 |         50 |          0 |          4 |         54 |
+| CSV      |          1 |         20 |          0 |          1 |         21 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         41 |      4,866 |      2,273 |         99 |      7,238 |
+| . (Files)                                                            |          8 |        173 |         10 |         15 |        198 |
+| 0_intruduce                                                          |          7 |        361 |        579 |         24 |        964 |
+| LinearDataStructure                                                  |         24 |      4,118 |      1,625 |         53 |      5,796 |
+| SortAlgrithm                                                         |          2 |        214 |         59 |          7 |        280 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                             | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| e:\project-C++\DATA_Struct\0_intruduce\Example.h                     | C++      |        133 |         12 |          2 |        147 |
+| e:\project-C++\DATA_Struct\0_intruduce\GCD.cpp                       | C++      |          0 |         49 |          1 |         50 |
+| e:\project-C++\DATA_Struct\0_intruduce\MaxSubsum.cpp                 | C++      |          0 |        289 |          7 |        296 |
+| e:\project-C++\DATA_Struct\0_intruduce\test0.cpp                     | C++      |          0 |         84 |          5 |         89 |
+| e:\project-C++\DATA_Struct\0_intruduce\test02.cpp                    | C++      |          0 |         75 |          4 |         79 |
+| e:\project-C++\DATA_Struct\0_intruduce\test1.cpp                     | C++      |          0 |         58 |          2 |         60 |
+| e:\project-C++\DATA_Struct\0_intruduce\undo.cpp                      | C++      |        228 |         12 |          3 |        243 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\FactorySimulation.cpp | C++      |          0 |          0 |          1 |          1 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\MatrixTestMain.cpp    | C++      |          0 |        127 |          0 |        127 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\QueueApp.cpp          | C++      |        325 |         21 |          5 |        351 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\StackApp.cpp          | C++      |          0 |        237 |          4 |        241 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\arrayDeque.hpp        | C++      |        269 |         10 |          4 |        283 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\arrayList.hpp         | C++      |        359 |          6 |          4 |        369 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\arrayQueue.hpp        | C++      |        126 |          2 |          2 |        130 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\arrayStack.hpp        | C++      |        131 |          2 |          1 |        134 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\chainList.hpp         | C++      |        709 |         38 |          3 |        750 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\circularList.hpp      | C++      |        263 |          8 |          2 |        273 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\deque.hpp             | C++      |         19 |          0 |          0 |         19 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\doubleLinkList.hpp    | C++      |        544 |         25 |          2 |        571 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\linearList.hpp        | C++      |         50 |          0 |          0 |         50 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\linearListMain.cpp    | C++      |          0 |        410 |          0 |        410 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\linkedQueue.hpp       | C++      |        145 |          0 |          1 |        146 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\linkedStack.hpp       | C++      |        197 |          0 |          1 |        198 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\listLearning.cpp      | C++      |          0 |        126 |          3 |        129 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\matrix.hpp            | C++      |        341 |          6 |          4 |        351 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\myExpectation.h       | C++      |        103 |         10 |         10 |        123 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\polynomial.hpp        | C++      |        520 |          3 |          4 |        527 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\queue.hpp             | C++      |         17 |          0 |          0 |         17 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\queueTestMain.cpp     | C++      |          0 |        112 |          1 |        113 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\ratMaze.cpp           | C++      |          0 |        157 |          0 |        157 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\stackTestMain.cpp     | C++      |          0 |        325 |          1 |        326 |
+| e:\project-C++\DATA_Struct\MaxSub.csv                                | CSV      |         20 |          0 |          1 |         21 |
+| e:\project-C++\DATA_Struct\SortAlgrithm\MySort.h                     | C++      |        178 |         50 |          6 |        234 |
+| e:\project-C++\DATA_Struct\SortAlgrithm\test1.cpp                    | C++      |         36 |          9 |          1 |         46 |
+| e:\project-C++\DATA_Struct\data1.txt                                 | TXT      |          7 |          0 |          0 |          7 |
+| e:\project-C++\DATA_Struct\data2.txt                                 | TXT      |          7 |          0 |          0 |          7 |
+| e:\project-C++\DATA_Struct\myExpectation.h                           | C++      |        103 |         10 |         10 |        123 |
+| e:\project-C++\DATA_Struct\undo.txt                                  | TXT      |          9 |          0 |          1 |         10 |
+| e:\project-C++\DATA_Struct\undo1.txt                                 | TXT      |          9 |          0 |          1 |         10 |
+| e:\project-C++\DATA_Struct\undo2.txt                                 | TXT      |          9 |          0 |          2 |         11 |
+| e:\project-C++\DATA_Struct\undo3.txt                                 | TXT      |          9 |          0 |          0 |          9 |
+| Total                                                                |          |      4,866 |      2,273 |         99 |      7,238 |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
