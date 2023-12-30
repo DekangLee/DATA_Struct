@@ -1,23 +1,57 @@
 #ifndef _HASHTABLEH_
 #define _HASHTABLEH_
 #include <iostream>
-#include <hash_map>
+#include "dictionary.hpp"
 #include <exception>
 using namespace std;
 template <class K, class E>
-class hashTable
+class hashTable : public dictionary<K, E>
 {
 public:
     hashTable(int theDivisor);
+    ~hashTable()
+    {
+        for (int i = 0; i < this->divisor; i++)
+        {
+            if (this->table[i] != nullptr)
+            {
+                delete this->table[i];
+                this->table[i] = nullptr;
+            }
+        }
+        if (this->table != nullptr)
+        {
+            delete[] this->table;
+            this->table = nullptr;
+        }
+    }
     void insert(const pair<K, E> &thePair);
     int search(const K &) const;
     pair<K, E> *find(const K &theKey) const;
-
+    bool empty() const
+    {
+        return this->dSize == 0;
+    }
+    int size() const
+    {
+        return this->dSize;
+    }
+    void erase(const K &);
+    void output() const;
+    E &operator[](const K &theKey)
+    {
+        pair<K, E> *result = this->find(theKey);
+        if(result == nullptr)
+        {
+            this->insert(make_pair(theKey,E()));
+        }
+        return this->find(theKey)->second;
+    }
 private:
     pair<K, E> **table; // 散列表
     hash<K> hash;       // 把类型K映射到一个非负整数
     int dSize;          // 字典中的数对个数
-    int divisor         // 散列函数除数
+    int divisor;        // 散列函数除数
 };
 template <class K, class E>
 hashTable<K, E>::hashTable(int theDivisor)
@@ -34,7 +68,12 @@ hashTable<K, E>::hashTable(int theDivisor)
 template <class K, class E>
 int hashTable<K, E>::search(const K &theKey) const
 {
-    int i = (int)this->hash(theKey) % this->divisor; // 这是theKey的起始桶
+    // cout << "thekey = " << theKey << endl;
+
+    // cout << this->hash(theKey) << endl;
+    // cout << (unsigned long long)this->hash(theKey) << endl;
+    int i = (unsigned long long)this->hash(theKey) % this->divisor; // 这是theKey的起始桶
+    // cout << i << endl;
     int j = i;
     do
     {
@@ -74,7 +113,39 @@ void hashTable<K, E>::insert(const pair<K, E> &thePair)
         if (this->table[b]->first == thePair.first)
             this->table[b]->first = thePair.first;
         else
-            throw bad_exception("Error table is full!");
+            throw invalid_argument("Error table is full!");
     }
+}
+template <class K, class E>
+void hashTable<K, E>::erase(const K &theKey)
+{
+    int b = this->search(theKey);
+    if (this->table[b] != nullptr)
+    {
+        delete this->table[b];
+        this->table[b] = nullptr;
+        this->dSize--;
+    }
+}
+template <class K, class E>
+void hashTable<K, E>::output() const
+{
+    for (int i = 0; i < this->divisor; i++)
+    {
+        if (this->table[i] != nullptr)
+        {
+            cout << *this->table[i] << endl;
+        }
+        else
+        {
+            cout << "nullptr" << endl;
+        }
+    }
+}
+template <class K, class E>
+ostream &operator<<(ostream &cout, const pair<K, E> &pair)
+{
+    cout << "(" << pair.first << "," << pair.second << ")";
+    return cout;
 }
 #endif
