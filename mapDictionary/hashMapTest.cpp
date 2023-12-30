@@ -20,6 +20,7 @@ int main()
     // threeToLong(ch);
     // cout << "ans = " << threeToLong(ch) << endl;
     int *p = (int *)ch;
+
     cout << (int)*ch << endl;
     cout << *(char *)a << endl;
     system("pause");

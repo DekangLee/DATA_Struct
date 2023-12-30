@@ -163,16 +163,16 @@ template <class K, class E>
 E &hashChain<K, E>::operator[](const K &theKey)
 {
     int i = this->search(theKey);
-    hashNode<K,E> *Node = this->headNode[i]->next;
-    while(Node != this->tailNode[i])
+    hashNode<K, E> *Node = this->headNode[i]->next;
+    while (Node != this->tailNode[i])
     {
-        if(Node->element.first == theKey)
+        if (Node->element.first == theKey)
             break;
     }
-    if(Node == this->tailNode[i])
+    if (Node == this->tailNode[i])
     {
-        hashNode<K,E> *newNode = new hashNode<K,E>(make_pair(theKey,E()));
-        hashNode<K,E> *preNode = Node->previous;
+        hashNode<K, E> *newNode = new hashNode<K, E>(make_pair(theKey, E()));
+        hashNode<K, E> *preNode = Node->previous;
         preNode->next = newNode;
         newNode->previous = preNode;
         newNode->next = Node;

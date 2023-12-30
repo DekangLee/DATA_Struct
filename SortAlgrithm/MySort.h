@@ -1,3 +1,13 @@
+/*
+ * @Author: dekangLee dakang579@gmail.com
+ * @Date: 2023-12-30 10:05:08
+ * @LastEditors: dekangLee dakang579@gmail.com
+ * @LastEditTime: 2023-12-30 12:10:08
+ * @FilePath: \DATA_Struct\SortAlgrithm\MySort.h
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by  dakang579@gmail.com, All Rights Reserved. 
+ */
 #ifndef _MYSORT_
 #define _MYSORT_
 #include <iostream>

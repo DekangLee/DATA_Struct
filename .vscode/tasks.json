@@ -9,7 +9,7 @@
                 "-g",
                 "${fileDirname}\\*.cpp",
                 "-o",
-                "${workspaceFolder}/exe/${fileBasenameNoExtension}.exe",
+                "${fileDirname}/output/${fileBasenameNoExtension}.exe",
                 "-fexec-charset=GBK"
             ],
             "options": {

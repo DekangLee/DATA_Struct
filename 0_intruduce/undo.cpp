@@ -231,10 +231,10 @@ int main()
 {
     clock_t start_time, end_time;
     start_time = clock();
-    // test();
+    test();
     // pair<int,int>res(orientate(2, 8));
     // cout <<"row = "<<res.first << " colum = "<<res.second<<endl;
-    cout<<(22050*8*600/8.0)/1024<<endl;
+    // cout<<(22050*8*600/8.0)/1024<<endl;
     end_time = clock();
     double Times = (double)(end_time - start_time)/CLOCKS_PER_SEC;
     cout << "程序运行" << Times << "s" << endl;

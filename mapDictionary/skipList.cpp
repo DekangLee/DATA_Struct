@@ -38,7 +38,7 @@ private:
     float cutoff;                     // 用来确定层数
     int levels;                       // 当前最大的非空链表
     int dSzie;                        // 字典的数对个数
-    int maxLevel;                     // 允许的最大链表层数
+int maxLevel;                     // 允许的最大链表层数
     key tailkey;                      // 最大关键字
     skipNode<key, value> *headerNode; // 跳表头结点
     skipNode<key, value> *tailNode;   // 跳表尾节点
