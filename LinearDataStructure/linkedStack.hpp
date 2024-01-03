@@ -142,6 +142,7 @@ ostream &operator<<(ostream &cout, const linkedStack<T> &RightStack)
     RightStack.output();
     return cout;
 }
+// 两个栈合并
 template <class T>
 linkedStack<T> linkedStack<T>::merge(const linkedStack<T> &RightStack)
 {

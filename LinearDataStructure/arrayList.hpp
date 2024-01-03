@@ -329,7 +329,8 @@ class arrayList<T>::iterator &arrayList<T>::iterator::operator++() // 前置递�
 {
     ++this->position;
     return *this;
-} template <class T>
+};
+template <class T>
 arrayList<T> &arrayList<T>::operator=(const arrayList<T> &arrayList)
 {
     this->arrayLength = arrayList.arrayLength;
