@@ -52,8 +52,49 @@ public:
     {
         return this->nodeStack.empty();
     }
+
 private:
     stack<binaryTreeNode<E> *> nodeStack;
+};
+// 二叉树后序遍历迭代器
+template <class E>
+struct postNode
+{
+    binaryTreeNode<E> *node;
+    bool root;
+    postNode(binaryTreeNode<E> *theNode = nullptr, bool theRoot = false)
+    {
+        this->node = theNode;
+        this->root = theRoot;
+    }
+};
+template <class E>
+class postIterator
+{
+public:
+    postIterator(binaryTreeNode<E> *theNode)
+    {
+        this->nodeStack.push(postNode<E>(theNode, true));
+    }
+    postIterator(){};
+    postIterator(const postIterator<E> &it)
+    {
+        this->nodeStack = it.nodeStack;
+    }
+    E &operator*()
+    {
+        binaryTreeNode<E> *node = this->nodeStack.top();
+        return node->element;
+    }
+    postIterator<E> &operator++();   // 后置递增
+    postIterator<E> operator++(int); // 前置递增
+    bool isEnd()
+    {
+        return this->nodeStack.empty();
+    }
+
+private:
+    stack<postNode<E>> nodeStack;
 };
 template <class E>
 class linkedBinaryTree : public binaryTree<binaryTreeNode<E>>
@@ -352,5 +393,11 @@ preIterator<E> preIterator<E>::operator++(int)
     if (node->leftChild != nullptr)
         this->nodeStack.push(node->leftChild);
     return temp;
+}
+template <class E>
+postIterator<E> &postIterator<E>::operator++()
+{
+    postNode<E> node =this->nodeStack.top();
+    
 }
 #endif

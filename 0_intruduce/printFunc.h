@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _PRINTFUNCH_
+#define _PRINTFUNCH_
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -145,3 +146,4 @@ void FreeMem(T **a, int n, int m)
     }
     delete[] a;
 }
+#endif

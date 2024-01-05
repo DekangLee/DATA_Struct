@@ -2,7 +2,7 @@
 //  * @Author: dekangLee dakang579@gmail.com
 //  * @Date: 2024-01-02 16:45:46
 //  * @LastEditors: dekangLee dakang579@gmail.com
-//  * @LastEditTime: 2024-01-03 08:21:18
+//  * @LastEditTime: 2024-01-05 16:04:39
 //  * @FilePath: \DATA_Struct\TreeStructure\main.cpp
 //  * @Description:
 //  *
@@ -10,6 +10,10 @@
 //  */
 // #include <iostream>
 // #include "linkedBinaryTree.hpp"
+// #include "linkedPriorityQueue.hpp"
+// #include "maxHeap.hpp"
+// #include "minHeap.hpp"
+// #include <ctime>
 // using namespace std;
 // template <class E>
 // void print(binaryTreeNode<E> *t)
@@ -55,10 +59,69 @@
 //         ++it;
 //     }
 // }
+// void test03()
+// {
+//     linkedPriorityQueue<int, int> q1;
+//     sortedChain<int, int> chain1;
+//     // chain1.insert(_Pair<int,int>(1,3));
+//     // chain1.insert(_Pair<int,int>(3,2));
+//     // chain1.insert(_Pair<int,int>(2,4));
+//     // chain1.insert(_Pair<int,int>(5,3));
+//     // chain1.insert(_Pair<int,int>(0,-1));
+//     // chain1.output();
+//     chain1.rOutput();
+//     q1.push(1, 3);
+//     q1.push(2, 4);
+//     q1.push(-1, 5);
+//     q1.push(3, 10);
+//     q1.push(10, 10);
+//     while (!q1.empty())
+//     {
+//         cout << q1.top() << endl;
+//         q1.pop();
+//     }
+// }
+// void test04()
+// {
+//     maxHeap<int> heap1;
+//     srand(time(0));
+//     for (int i = 0; i < 10; ++i)
+//     {
+//         int num = rand() % 100;
+//         heap1.push(num);
+//     }
+//     maxHeap<int> heap2 = heap1;
+//     for (int i = 0; i < 10; ++i)
+//     {
+//         cout << heap2.top() << endl;
+//         heap2.pop();
+//     }
+//     cout<<"heap1 size = "<<heap1.size()<<endl;
+//     cout<<"heap2 size = "<<heap2.size()<<endl;
+// }
+// void test05()
+// {
+//     minHeap<int> heap1;
+//     srand(time(0));
+//     for (int i = 0; i < 10; ++i) 
+//     {
+//         int num = rand() % 100;
+//         heap1.push(num);
+//     }
+//     for (int i = 0; i < 10; ++i)
+//     {
+//         cout << heap1.top() << endl;
+//         heap1.pop();
+//     }
+// }
+
 // int main()
 // {
 //     // test01();
-//     test02();
-//     system("pause");
+//     // test02();
+//     // test03();
+//     // test04();
+//     // test05();
+//     // system("pause");
 //     return 0;
 // }

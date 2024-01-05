@@ -1,0 +1,96 @@
+Date : 2024-01-03 19:47:15
+Directory : e:\project-C++\DATA_Struct
+Total : 63 files,  6457 codes, 3180 comments, 127 blanks, all 9764 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         53 |      6,384 |      3,180 |        121 |      9,685 |
+| TXT      |          8 |         52 |          0 |          4 |         56 |
+| CSV      |          1 |         20 |          0 |          1 |         21 |
+| Markdown |          1 |          1 |          0 |          1 |          2 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         63 |      6,457 |      3,180 |        127 |      9,764 |
+| . (Files)                                                            |         10 |        174 |         20 |         17 |        211 |
+| 0_intruduce                                                          |          7 |        361 |        579 |         24 |        964 |
+| LinearDataStructure                                                  |         24 |      4,000 |      2,023 |         53 |      6,076 |
+| SortAlgrithm                                                         |          2 |        214 |         69 |          7 |        290 |
+| TreeStructure                                                        |          9 |        820 |        244 |         16 |      1,080 |
+| mapDictionary                                                        |         11 |        888 |        245 |         10 |      1,143 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                             | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| e:\project-C++\DATA_Struct\0_intruduce\Example.h                     | C++      |        133 |         12 |          2 |        147 |
+| e:\project-C++\DATA_Struct\0_intruduce\GCD.cpp                       | C++      |          0 |         49 |          1 |         50 |
+| e:\project-C++\DATA_Struct\0_intruduce\MaxSubsum.cpp                 | C++      |          0 |        289 |          7 |        296 |
+| e:\project-C++\DATA_Struct\0_intruduce\test0.cpp                     | C++      |          0 |         84 |          5 |         89 |
+| e:\project-C++\DATA_Struct\0_intruduce\test02.cpp                    | C++      |          0 |         75 |          4 |         79 |
+| e:\project-C++\DATA_Struct\0_intruduce\test1.cpp                     | C++      |          0 |         58 |          2 |         60 |
+| e:\project-C++\DATA_Struct\0_intruduce\undo.cpp                      | C++      |        228 |         12 |          3 |        243 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\FactorySimulation.cpp | C++      |          0 |        278 |          1 |        279 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\MatrixTestMain.cpp    | C++      |          0 |        127 |          0 |        127 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\QueueApp.cpp          | C++      |          0 |        346 |          5 |        351 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\StackApp.cpp          | C++      |        206 |         31 |          4 |        241 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\arrayDeque.hpp        | C++      |        269 |         10 |          4 |        283 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\arrayList.hpp         | C++      |        360 |          6 |          4 |        370 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\arrayQueue.hpp        | C++      |        126 |          2 |          2 |        130 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\arrayStack.hpp        | C++      |        131 |          2 |          1 |        134 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\chainList.hpp         | C++      |        709 |         38 |          3 |        750 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\circularList.hpp      | C++      |        263 |          8 |          2 |        273 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\deque.hpp             | C++      |         19 |          0 |          0 |         19 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\doubleLinkList.hpp    | C++      |        544 |         25 |          2 |        571 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\linearList.hpp        | C++      |         50 |          0 |          0 |         50 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\linearListMain.cpp    | C++      |          0 |        410 |          0 |        410 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\linkedQueue.hpp       | C++      |        145 |          0 |          1 |        146 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\linkedStack.hpp       | C++      |        197 |          1 |          1 |        199 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\listLearning.cpp      | C++      |          0 |        126 |          3 |        129 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\matrix.hpp            | C++      |        341 |          6 |          4 |        351 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\myExpectation.h       | C++      |        103 |         10 |         10 |        123 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\polynomial.hpp        | C++      |        520 |          3 |          4 |        527 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\queue.hpp             | C++      |         17 |          0 |          0 |         17 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\queueTestMain.cpp     | C++      |          0 |        112 |          1 |        113 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\ratMaze.cpp           | C++      |          0 |        157 |          0 |        157 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\stackTestMain.cpp     | C++      |          0 |        325 |          1 |        326 |
+| e:\project-C++\DATA_Struct\MaxSub.csv                                | CSV      |         20 |          0 |          1 |         21 |
+| e:\project-C++\DATA_Struct\README.md                                 | Markdown |          1 |          0 |          1 |          2 |
+| e:\project-C++\DATA_Struct\SortAlgrithm\MySort.h                     | C++      |        178 |         60 |          6 |        244 |
+| e:\project-C++\DATA_Struct\SortAlgrithm\test1.cpp                    | C++      |         36 |          9 |          1 |         46 |
+| e:\project-C++\DATA_Struct\TreeStructure\Signal_amplifier.cpp        | C++      |          0 |        106 |          1 |        107 |
+| e:\project-C++\DATA_Struct\TreeStructure\binaryTree.hpp              | C++      |         15 |          0 |          0 |         15 |
+| e:\project-C++\DATA_Struct\TreeStructure\findUnion.cpp               | C++      |          0 |         95 |          1 |         96 |
+| e:\project-C++\DATA_Struct\TreeStructure\linkedBinaryTree.hpp        | C++      |        382 |         12 |          8 |        402 |
+| e:\project-C++\DATA_Struct\TreeStructure\linkedPriorityQueue.hpp     | C++      |         54 |          0 |          0 |         54 |
+| e:\project-C++\DATA_Struct\TreeStructure\main.cpp                    | C++      |         62 |         26 |          1 |         89 |
+| e:\project-C++\DATA_Struct\TreeStructure\maxPriorityQueue.hpp        | C++      |         14 |          0 |          0 |         14 |
+| e:\project-C++\DATA_Struct\TreeStructure\setTree.hpp                 | C++      |         44 |          5 |          1 |         50 |
+| e:\project-C++\DATA_Struct\TreeStructure\sortedChain.hpp             | C++      |        249 |          0 |          4 |        253 |
+| e:\project-C++\DATA_Struct\data1.txt                                 | TXT      |          7 |          0 |          0 |          7 |
+| e:\project-C++\DATA_Struct\data2.txt                                 | TXT      |          7 |          0 |          0 |          7 |
+| e:\project-C++\DATA_Struct\mapDictionary\LZWcompress.cpp             | C++      |         95 |         38 |          1 |        134 |
+| e:\project-C++\DATA_Struct\mapDictionary\LZWdecompress.cpp           | C++      |        101 |         29 |          0 |        130 |
+| e:\project-C++\DATA_Struct\mapDictionary\Main.cpp                    | C++      |          0 |        152 |          1 |        153 |
+| e:\project-C++\DATA_Struct\mapDictionary\codeFile.txt                | TXT      |          1 |          0 |          0 |          1 |
+| e:\project-C++\DATA_Struct\mapDictionary\decodeFile.txt              | TXT      |          1 |          0 |          0 |          1 |
+| e:\project-C++\DATA_Struct\mapDictionary\dictionary.hpp              | C++      |         16 |          0 |          0 |         16 |
+| e:\project-C++\DATA_Struct\mapDictionary\hashChain.hpp               | C++      |        182 |          1 |          1 |        184 |
+| e:\project-C++\DATA_Struct\mapDictionary\hashMapTest.cpp             | C++      |         24 |          3 |          1 |         28 |
+| e:\project-C++\DATA_Struct\mapDictionary\hashTable.hpp               | C++      |        137 |         13 |          1 |        151 |
+| e:\project-C++\DATA_Struct\mapDictionary\skipList.cpp                | C++      |        108 |          9 |          2 |        119 |
+| e:\project-C++\DATA_Struct\mapDictionary\sortedChain.hpp             | C++      |        223 |          0 |          3 |        226 |
+| e:\project-C++\DATA_Struct\myExpectation.h                           | C++      |        103 |         10 |         10 |        123 |
+| e:\project-C++\DATA_Struct\test.cpp                                  | C++      |          0 |         10 |          1 |         11 |
+| e:\project-C++\DATA_Struct\undo.txt                                  | TXT      |          9 |          0 |          1 |         10 |
+| e:\project-C++\DATA_Struct\undo1.txt                                 | TXT      |          9 |          0 |          1 |         10 |
+| e:\project-C++\DATA_Struct\undo2.txt                                 | TXT      |          9 |          0 |          2 |         11 |
+| e:\project-C++\DATA_Struct\undo3.txt                                 | TXT      |          9 |          0 |          0 |          9 |
+| Total                                                                |          |      6,457 |      3,180 |        127 |      9,764 |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
