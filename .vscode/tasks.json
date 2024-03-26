@@ -3,14 +3,14 @@
         {
             "type": "cppbuild",
             "label": "g++.exe build active file",
-            "command": "E:\\gcc\\mingw64\\bin\\g++.exe",
+            "command": "E:/MinGW/mingw64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${fileDirname}\\*.cpp",
                 "-o",
                 "${fileDirname}/output/${fileBasenameNoExtension}.exe",
-                "-fexec-charset=GBK"
+                "-fexec-charset=UTF-8"
             ],
             "options": {
                 "cwd": "${fileDirname}"

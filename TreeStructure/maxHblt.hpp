@@ -35,7 +35,12 @@ template <class T>
 class maxHblt
 {
 public:
-    maxHblt(const T &theElement = T());
+    maxHblt(const T &theElement);
+    maxHblt()
+    {
+        this->root = nullptr;
+        this->treeSize = 0;
+    }
     ~maxHblt();
     // 该高度优先左高树是否为空
     bool empty() const
@@ -93,7 +98,7 @@ private:
 template <class T>
 void (*maxHblt<T>::visit)(binaryTreeNode<T> *) = nullptr;
 template <class T>
-// maxHblt的静态前序遍历实现
+// maxHblt的静态前序遍历函数实现
 void maxHblt<T>::preOrder(binaryTreeNode<T> *t)
 {
     if (t == nullptr)

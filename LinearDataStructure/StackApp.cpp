@@ -217,6 +217,15 @@ void test12()
     L1.insert(0, -1);
     cout << L1 << endl;
 }
+void test14()
+{
+    doubleLinkList<int> *L1 = new doubleLinkList<int>;
+    for(int i = 0; i<10;i++)
+    {
+        L1->push_back(rand()%10);
+    }
+    cout<<L1->size()<<endl;
+}
 int main()
 {
     // test01();
@@ -235,7 +244,8 @@ int main()
     // test10();
     // test11();
     // test12();
-    test13();
-    system("pause");
+    // test13();
+    test14();
+    // system("pause");
     return 0;
 }

@@ -17,6 +17,7 @@ struct binaryTreeNode
     }
     binaryTreeNode(const T &theElement)
     {
+        // cout << "theElement = " << theElement << endl;
         this->element = theElement;
         this->leftChild = this->rightChild = nullptr;
     }
@@ -98,6 +99,7 @@ private:
 };
 template <class E>
 class linkedBinaryTree : public binaryTree<binaryTreeNode<E>>
+// class linkedBinaryTree
 {
 public:
     linkedBinaryTree()
@@ -153,6 +155,8 @@ public:
     {
         return preIterator(this->root);
     }
+    void makeTree(const E &i, const linkedBinaryTree<E> &tree1, const linkedBinaryTree<E> &tree2);
+    linkedBinaryTree<E> &operator=(const linkedBinaryTree<E> &theTree);
 
 private:
     binaryTreeNode<E> *root;                     // 指向树的根节点
@@ -165,36 +169,34 @@ private:
     {
         delete t;
     }
+    binaryTreeNode<E>* geneTree(binaryTreeNode<E>*theRoot, const linkedBinaryTree<E>&tree);
 };
-template <class E>
-linkedBinaryTree<E>::linkedBinaryTree(const linkedBinaryTree<E> &tree)
+template<class T>
+binaryTreeNode<T>* linkedBinaryTree<T>::geneTree(binaryTreeNode<T>*theRoot, const linkedBinaryTree<T>&tree)
 {
-    this->treeSize = tree.treeSize;
-    binaryTreeNode<E> *sourceNode = tree.root;
+    binaryTreeNode<T> *sourceNode = tree.root;
     if (sourceNode == nullptr)
     {
-        // 源二叉树为空直接返回
-        this->root = nullptr;
-        return;
+        return nullptr;
     }
-    this->root = new binaryTreeNode<E>(sourceNode->element);
+    theRoot = new binaryTreeNode<T>(sourceNode->element);
 
-    binaryTreeNode<E> *targetNode = this->root;
+    binaryTreeNode<T> *targetNode = theRoot;
 
-    queue<binaryTreeNode<E> *> sourceQ;
-    queue<binaryTreeNode<E> *> targetQ;
+    queue<binaryTreeNode<T> *> sourceQ;
+    queue<binaryTreeNode<T> *> targetQ;
     // 根据层次遍历来拷贝构造另一个二叉树
     while (sourceNode != nullptr)
     {
         if (sourceNode->leftChild != nullptr)
         {
-            targetNode->leftChild = new binaryTreeNode<E>(sourceNode->leftChild->element);
+            targetNode->leftChild = new binaryTreeNode<T>(sourceNode->leftChild->element);
             sourceQ.push(sourceNode->leftChild);
             targetQ.push(targetNode->leftChild);
         }
         if (sourceNode->rightChild != nullptr)
         {
-            targetNode->rightChild = new binaryTreeNode<E>(sourceNode->rightChild->element);
+            targetNode->rightChild = new binaryTreeNode<T>(sourceNode->rightChild->element);
             sourceQ.push(sourceNode->rightChild);
             targetQ.push(targetNode->rightChild);
         }
@@ -205,6 +207,14 @@ linkedBinaryTree<E>::linkedBinaryTree(const linkedBinaryTree<E> &tree)
         sourceQ.pop();
         targetQ.pop();
     }
+    return theRoot;
+}
+template <class E>
+linkedBinaryTree<E>::linkedBinaryTree(const linkedBinaryTree<E> &tree)
+{
+    // if()
+    this->treeSize = tree.treeSize;
+    this->root = geneTree(this->root,tree);
 }
 template <class E>
 void linkedBinaryTree<E>::preOrder(binaryTreeNode<E> *t)
@@ -238,6 +248,7 @@ void linkedBinaryTree<E>::postOrder(binaryTreeNode<E> *t)
     {
         postOrder(t->leftChild);
         postOrder(t->rightChild);
+        // cout<<"t->element = "<<t->element<<endl;
         linkedBinaryTree<E>::visit(t);
     }
 }
@@ -364,6 +375,29 @@ int linkedBinaryTree<E>::height(binaryTreeNode<E> *t) const
     else
         return ++hr;
 }
+
+// 合并两颗二叉树
+template <class E>
+void linkedBinaryTree<E>::makeTree(const E &i, const linkedBinaryTree<E> &tree1, const linkedBinaryTree<E> &tree2)
+{
+    this->~linkedBinaryTree();
+    binaryTreeNode<E> *leftchild;
+    binaryTreeNode<E> *rightchild;
+    this->root = new binaryTreeNode<E>(i);
+    leftchild = geneTree(leftchild,tree1);
+    rightchild = geneTree(rightchild,tree1);
+    this->root->leftChild = leftchild;
+    this->root->rightChild = rightchild;
+    this->treeSize = tree1.treeSize + tree2.treeSize + 1;
+}
+template <class E>
+linkedBinaryTree<E> &linkedBinaryTree<E>::operator=(const linkedBinaryTree<E> &tree)
+{
+    this->~linkedBinaryTree();
+    this->treeSize = tree.treeSize;
+    this->root = geneTree(this->root,tree);
+    return *this;
+}
 template <class E>
 preIterator<E> &preIterator<E>::operator++()
 {
@@ -397,7 +431,6 @@ preIterator<E> preIterator<E>::operator++(int)
 template <class E>
 postIterator<E> &postIterator<E>::operator++()
 {
-    postNode<E> node =this->nodeStack.top();
-    
+    postNode<E> node = this->nodeStack.top();
 }
 #endif

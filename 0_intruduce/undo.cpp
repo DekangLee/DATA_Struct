@@ -155,7 +155,7 @@ ARRAY_INT undo(vector<vector<int>> v_num, int row, int colum)
     return v_num;
     //  print(v_num);
 }
-bool undo(vector<vector<int>> &Data)
+void undo(vector<vector<int>> &Data)
 {
     stack<int> res;
     vector<pair<int, int>> Position = Find(Data);
@@ -164,10 +164,8 @@ bool undo(vector<vector<int>> &Data)
     while (!Isend(Data))
     {
         // cout << "Position:" << Position[pos].first << "," << Position[pos].second << endl;
-
         int r = Position[pos].first;
         int c = Position[pos].second;
-
         while (number <= 9)
         {
             // cout << "tryToSolve:" << tryToSolve(Data, r, c, number) << endl;
@@ -186,10 +184,10 @@ bool undo(vector<vector<int>> &Data)
             pos++;
             // cout << "res.top():" << res.top() << endl;
         }
-        else
+        else //if (!Isend(Data)) // 无解回溯至res的顶端数字
         {
-            if(res.empty())
-                return false;
+            if (res.empty())
+                return;
             int r = Position[pos].first;
             int c = Position[pos].second;
             Data[r][c] = 0;
@@ -198,15 +196,27 @@ bool undo(vector<vector<int>> &Data)
             pos--;
             number = prenumber + 1;
         }
-        // cout << "--------------------" << endl;
-        // print(Data);
+        if (Isend(Data)) // 将已经得到的结果进行输出，并且回溯
+        {
+            print(Data);
+            cout << "---------" << endl;
+            // cout << Position.size() << endl;
+            // cout << "pos = " << pos << endl;
+            int r = Position[pos - 1].first;
+            int c = Position[pos - 1].second;
+            Data[r][c] = 0;
+            int prenumber = res.top();
+            res.pop();
+            pos--;
+            number = prenumber + 1;
+        }
     }
-    return true;
+    return;
 }
 void test()
 {
     ifstream ifs;
-    ifs.open("undo3.txt", ios::in);
+    ifs.open("undo4.txt", ios::in);
     vector<vector<int>> v_num;
     string buff;
     v_num.resize(ROW);
@@ -220,11 +230,13 @@ void test()
     }
     cout << "The problem is-------------------" << endl;
     print(v_num);
-    
+
     cout << "The result is-------------------" << endl;
-    if(!undo(v_num))
-        cout<<"数独无解！"<<endl;
-    print(v_num);
+    undo(v_num);
+
+    // if (!undo(v_num))
+    //     cout << "数独无解！" << endl;
+    // print(v_num);
     // cout << Isend(v_num) << endl;
 }
 int main()
@@ -236,8 +248,7 @@ int main()
     // cout <<"row = "<<res.first << " colum = "<<res.second<<endl;
     // cout<<(22050*8*600/8.0)/1024<<endl;
     end_time = clock();
-    double Times = (double)(end_time - start_time)/CLOCKS_PER_SEC;
+    double Times = (double)(end_time - start_time) / CLOCKS_PER_SEC;
     cout << "程序运行" << Times << "s" << endl;
-    system("pause");
     return 0;
 }

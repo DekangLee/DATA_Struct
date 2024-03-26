@@ -5,6 +5,7 @@ class binaryTree
 {
 public:
     virtual ~binaryTree(){};
+     binaryTree(){};
     virtual bool empty() const = 0;
     virtual int size() const = 0;
     virtual void preOrder(void (*)(T *)) = 0;

@@ -18,7 +18,7 @@ public:
             this->heap = nullptr;
         }
     }
-    T top() const
+    T &top() const
     {
         return this->heap[1];
     }
@@ -50,6 +50,7 @@ void minHeap<T>::push(const T &theElement)
         delete[] this->heap;
         this->heap = newArray;
         this->arrLength *= 2;
+        // cout<<"--------------------------------------------"<<endl;
     }
     // 为元素寻找插入位置
     int currentNode = ++heapSize;
@@ -72,7 +73,7 @@ void minHeap<T>::pop()
     int child = 2;
     while (child <= this->heapSize)
     {
-        // heap[child] 应该是currentNode 的更大的孩子
+        // heap[child] 应该是currentNode 的更小的孩子
         if (child < this->heapSize && this->heap[child] > this->heap[child + 1])
             child++;
         if (lastElement <= this->heap[child])

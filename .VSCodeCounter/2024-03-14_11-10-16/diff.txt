@@ -1,0 +1,72 @@
+Date : 2024-03-14 11:10:16
+Directory : e:\project-C++\DATA_Struct
+Total : 41 files,  3274 codes, 1084 comments, 65 blanks, all 4423 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         40 |      3,265 |      1,084 |         65 |      4,414 |
+| TXT      |          1 |          9 |          0 |          0 |          9 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                              | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                 |         41 |      3,274 |      1,084 |         65 |      4,423 |
+| . (Files)                                                         |          2 |         63 |          0 |         -1 |         62 |
+| 0_intruduce                                                       |          6 |        257 |         66 |         -1 |        322 |
+| Graph                                                             |          7 |        904 |        171 |         24 |      1,099 |
+| LinearDataStructure                                               |          6 |          8 |          2 |          0 |         10 |
+| TreeStructure                                                     |         17 |      2,137 |        750 |         43 |      2,930 |
+| mapDictionary                                                     |          3 |        -95 |         95 |          0 |          0 |
++-------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                          | language | code       | comment    | blank      | total      |
++-------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| e:\project-C++\DATA_Struct\0_intruduce\Example.h                  | C++      |       -133 |        -12 |         -2 |       -147 |
+| e:\project-C++\DATA_Struct\0_intruduce\MaxSubsum.cpp              | C++      |        246 |       -246 |          0 |          0 |
+| e:\project-C++\DATA_Struct\0_intruduce\printFunc.h                | C++      |        135 |         12 |          2 |        149 |
+| e:\project-C++\DATA_Struct\0_intruduce\undo.cpp                   | C++      |          9 |          3 |         -1 |         11 |
+| e:\project-C++\DATA_Struct\0_intruduce\undo2.cpp                  | C++      |          0 |        145 |          0 |        145 |
+| e:\project-C++\DATA_Struct\0_intruduce\undo3.cpp                  | C++      |          0 |        164 |          0 |        164 |
+| e:\project-C++\DATA_Struct\Graph\adjacencyWDigraph.hpp            | C++      |        275 |         29 |          3 |        307 |
+| e:\project-C++\DATA_Struct\Graph\arrayQueue.hpp                   | C++      |        125 |          2 |          2 |        129 |
+| e:\project-C++\DATA_Struct\Graph\graph.hpp                        | C++      |         40 |          3 |          1 |         44 |
+| e:\project-C++\DATA_Struct\Graph\linkedDigraph.hpp                | C++      |        251 |          0 |          1 |        252 |
+| e:\project-C++\DATA_Struct\Graph\main1.cpp                        | C++      |        110 |         37 |          0 |        147 |
+| e:\project-C++\DATA_Struct\Graph\myExpectation.h                  | C++      |        103 |         10 |         10 |        123 |
+| e:\project-C++\DATA_Struct\Graph\test.cpp                         | C++      |          0 |         90 |          7 |         97 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\MatrixTestMain.cpp | C++      |          0 |       -127 |          0 |       -127 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\QueueApp.cpp       | C++      |          0 |       -346 |         -5 |       -351 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\StackApp.cpp       | C++      |       -206 |        -31 |         -4 |       -241 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\matrixTestMain.cpp | C++      |          0 |        127 |          0 |        127 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\queueApp.cpp       | C++      |          0 |        346 |          5 |        351 |
+| e:\project-C++\DATA_Struct\LinearDataStructure\stackApp.cpp       | C++      |        214 |         33 |          4 |        251 |
+| e:\project-C++\DATA_Struct\TreeStructure\AVLTree.hpp              | C++      |        362 |         53 |          6 |        421 |
+| e:\project-C++\DATA_Struct\TreeStructure\RBTree.hpp               | C++      |        603 |        110 |          8 |        721 |
+| e:\project-C++\DATA_Struct\TreeStructure\binarySearchTree.hpp     | C++      |        223 |         20 |          3 |        246 |
+| e:\project-C++\DATA_Struct\TreeStructure\binaryTree.hpp           | C++      |          1 |          0 |          0 |          1 |
+| e:\project-C++\DATA_Struct\TreeStructure\completeWinnerTree.hpp   | C++      |        156 |         11 |          2 |        169 |
+| e:\project-C++\DATA_Struct\TreeStructure\huffmanTree.hpp          | C++      |        105 |         18 |          0 |        123 |
+| e:\project-C++\DATA_Struct\TreeStructure\linkedBinaryTree.hpp     | C++      |         29 |          5 |          0 |         34 |
+| e:\project-C++\DATA_Struct\TreeStructure\main.cpp                 | C++      |        -62 |        -26 |         -1 |        -89 |
+| e:\project-C++\DATA_Struct\TreeStructure\main1.cpp                | C++      |          0 |        194 |          0 |        194 |
+| e:\project-C++\DATA_Struct\TreeStructure\main2.cpp                | C++      |          0 |         75 |          1 |         76 |
+| e:\project-C++\DATA_Struct\TreeStructure\main3.cpp                | C++      |          0 |        186 |          1 |        187 |
+| e:\project-C++\DATA_Struct\TreeStructure\main4.cpp                | C++      |        241 |         53 |          9 |        303 |
+| e:\project-C++\DATA_Struct\TreeStructure\maxHblt.hpp              | C++      |        188 |         21 |          2 |        211 |
+| e:\project-C++\DATA_Struct\TreeStructure\maxHeap.hpp              | C++      |         99 |          8 |          1 |        108 |
+| e:\project-C++\DATA_Struct\TreeStructure\minHeap.hpp              | C++      |         77 |          9 |          1 |         87 |
+| e:\project-C++\DATA_Struct\TreeStructure\myExpectation.h          | C++      |        103 |         10 |         10 |        123 |
+| e:\project-C++\DATA_Struct\TreeStructure\winnerTree.hpp           | C++      |         12 |          3 |          0 |         15 |
+| e:\project-C++\DATA_Struct\mapDictionary\LZWcompress.cpp          | C++      |        -95 |         95 |          0 |          0 |
+| e:\project-C++\DATA_Struct\mapDictionary\Main.cpp                 | C++      |          0 |       -152 |         -1 |       -153 |
+| e:\project-C++\DATA_Struct\mapDictionary\main.cpp                 | C++      |          0 |        152 |          1 |        153 |
+| e:\project-C++\DATA_Struct\test.cpp                               | C++      |         54 |          0 |         -1 |         53 |
+| e:\project-C++\DATA_Struct\undo4.txt                              | TXT      |          9 |          0 |          0 |          9 |
+| Total                                                             |          |      3,274 |      1,084 |         65 |      4,423 |
++-------------------------------------------------------------------+----------+------------+------------+------------+------------+

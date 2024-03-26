@@ -91,4 +91,18 @@ void maxHeap<T>::pop()
     }
     heap[currentNode] = lastElement;
 }
+template <class T>
+void heapSort(T *arr, int n)
+{
+    maxHeap<T> heap1;
+    for (int i = 0; i < n; i++)
+    {
+        heap1.push(arr[i]);
+    }
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = heap1.top();
+        heap1.pop();
+    }
+}
 #endif
